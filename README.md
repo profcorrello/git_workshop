@@ -1,1 +1,5 @@
-# git_workshop
+# Example Git Workshop
+
+____
+
+### This is an example repository
