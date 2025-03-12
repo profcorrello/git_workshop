@@ -2,8 +2,12 @@ package mcc.examples.calc;
 
 import java.util.Scanner;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Calculator {
-	static double lastResult = 0; // Memory feature to store the latest result
+	static double lastResult = 0;
+	static ArrayList<String> calculationLog = new ArrayList<>();
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -32,7 +36,14 @@ public class Calculator {
 				System.out.println("Invalid operator.");
 				continue;
 			}
+			String logEntry = num1 + " " + operator + " " + num2 + " = " + lastResult;
+			calculationLog.add(logEntry);
 			System.out.println("Result: " + lastResult);
+			// Display recent calculations
+			System.out.println("\nRecent Calculations:");
+			for (String entry : calculationLog) {
+				System.out.println(entry);
+			}
 		}
 	}
 }
