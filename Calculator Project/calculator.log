@@ -1,0 +1,8 @@
+Mar 12, 2025 8:56:38 AM mcc.examples.Calculator4 main
+INFO: 34.0 + 45.0 = 79.0
+Mar 12, 2025 8:56:50 AM mcc.examples.Calculator4 main
+INFO: 79.0 / 56.0 = 1.4107142857142858
+Mar 12, 2025 9:03:27 AM mcc.examples.Calculator4 main
+INFO: 45.0 + 34.0 = 79.0
+Mar 12, 2025 9:03:31 AM mcc.examples.Calculator4 main
+INFO: Calculator exited by user.
