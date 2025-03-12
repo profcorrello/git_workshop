@@ -1,0 +1,6 @@
+Mar 12, 2025 6:22:15 PM mcc.examples.calc.Calculator main
+INFO: 90.0 * 56.0 = 5040.0
+Mar 12, 2025 6:22:31 PM mcc.examples.calc.Calculator main
+INFO: 5040.0 + 860.0 = 5900.0
+Mar 12, 2025 6:22:45 PM mcc.examples.calc.Calculator main
+INFO: Calculator exited by user.
