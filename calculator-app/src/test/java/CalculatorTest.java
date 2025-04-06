@@ -14,7 +14,6 @@ class CalculatorTest {
         assertEquals("Cannot divide by zero", exception.getMessage());
     }
     
-
     @Test
     void testIntegerOverflow() {
         int a = Integer.MAX_VALUE;
