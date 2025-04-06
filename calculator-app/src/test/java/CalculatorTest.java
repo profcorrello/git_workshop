@@ -19,15 +19,18 @@ class CalculatorTest {
         int a = Integer.MAX_VALUE;
         int b = 1;
         int result = calculator.add(a, b);
-        assertTrue(result < 0);
+        assertEquals(result, Integer.MIN_VALUE);
+//        assertTrue(result == Integer.MIN_VALUE);
     }
 
     @Test
     void testIntegerUnderflow() {
         int a = Integer.MIN_VALUE;
-        int b = -1;
+        int b = 1;
         int result = calculator.subtract(a, b);
-        assertTrue(result > 0);
+        System.out.println("result: " + result + " Max Value: " + Integer.MAX_VALUE);	
+        assertEquals(result, Integer.MAX_VALUE);
+//        assertTrue(result == Integer.MAX_VALUE);
     }
 
     @ParameterizedTest
