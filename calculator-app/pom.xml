@@ -11,6 +11,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <junit.jupiter.version>5.12.1</junit.jupiter.version>
         <mockito.version>5.11.0</mockito.version>
+        <project.reporting.outputDirectory>surefire_reports</project.reporting.outputDirectory>
     </properties>
     <dependencies>
         <dependency>
@@ -63,7 +64,10 @@
                         <phase>verify</phase>
                         <goals>
                             <goal>report</goal>
-                        </goals>
+                        </goals> 
+                        <configuration>
+						    <outputDirectory>jacoco</outputDirectory>
+						</configuration>                       
                     </execution>
                 </executions>
             </plugin>
