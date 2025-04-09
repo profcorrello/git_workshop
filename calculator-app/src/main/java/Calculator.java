@@ -12,4 +12,9 @@ public class Calculator {
         if (b == 0) throw new IllegalArgumentException("Cannot divide by zero");
         return a / b;
     }
+    
+    public long longDivide(long a, long b) {
+    	if (b == 0) throw new IllegalArgumentException("Cannot divide by zero");
+        return a / b;
+    }
 }
